@@ -1,88 +1,41 @@
-<mvc:View 
-    controllerName="com.mindsetconsulting.sapgui1.view.Detail"
-    xmlns="sap.m"
-    xmlns:core="sap.ui.core"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:l="sap.ui.layout"
-    xmlns:f="sap.ui.layout.form">
-    <Page
-        id="detailPage" 
-        navButtonPress="onNavBack" 
-        title="{i18n>detailTitle}" 
-        showNavButton="{device>/isPhone}">
+<mvc:View xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="com.mindsetconsulting.sapgui1.view.Detail">
+    <Page id="detailPage" navButtonPress="onNavBack" title="{i18n&gt;detailTitle}" showNavButton="{device&gt;/isPhone}">
         <content>
-            <ObjectHeader 
-                id="detailHeader"				title="{Text}"				number="{Report}"				numberUnit=""                introActive="false" 
-                titleActive="false" 
-                iconActive="false">
-                <attributes
-                    id="detailAttributes">                
-                    <ObjectAttribute 
-                        id="attribute" 
-                        text="{i18n>detailText}" 
-                        active="false">
+            <ObjectHeader id="detailHeader" title="{Text}" number="{Report}" numberUnit="" introActive="false" titleActive="false" iconActive="false">
+                <attributes id="detailAttributes">                
+                    <ObjectAttribute id="attribute" text="{i18n&gt;detailText}" active="false">
                     </ObjectAttribute>
                 </attributes>
-                <firstStatus
-                    id="detailStatus">
-                    <ObjectStatus 
-                        id="status"						text="">
+                <firstStatus id="detailStatus">
+                    <ObjectStatus id="status" text="">
                     </ObjectStatus>
                 </firstStatus>
             </ObjectHeader>
             
    
-            <IconTabBar 
-                id="idIconTabBar" 
-                expanded="{device>/isNoPhone}">
-    			<items 
-    			    id="detailsItems">
-                    <IconTabFilter 
-                        id="iconTabFilter1" 
-                        key="selfInfo" 
-                        icon="sap-icon://hint">
+            <IconTabBar id="idIconTabBar" expanded="{device&gt;/isNoPhone}">
+    			<items id="detailsItems">
+                    <IconTabFilter id="iconTabFilter1" key="selfInfo" icon="sap-icon://hint">
                         <content>
-							<f:SimpleForm 
-								id="iconTabFilter1form" 
-								minWidth="1024" 
-								editable="false" 
-								layout="ResponsiveGridLayout" 
-								labelSpanL="3" 
-								labelSpanM="3" 
-								emptySpanL="4" 
-								emptySpanM="4" 
-								columnsL="1">
+							<f:SimpleForm id="iconTabFilter1form" minWidth="1024" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1">
 								<f:content>
-								<Label 
-										id="label-text" 
-										text="Description">
+								<Label id="label-text" text="Description">
 									</Label>
-									<Text 
-										id="descriptionvalue"										text="{Text}"										maxLines="0">
+									<Text id="descriptionvalue" text="{Text}" maxLines="0">
 									</Text>
-									<Label 
-										id="label1" 
-										text="T-Code">
+									<Label id="label1" text="T-Code">
 									</Label>
-									<Text 
-										id="tcodevalue"										text="{Report}"										maxLines="0">
+									<Text id="tcodevalue" text="{Report}" maxLines="0">
 									</Text>
-									<Label 
-										id="clientlabel" 
-										text="Client">
+									<Label id="clientlabel" text="Client">
 									</Label>
-									<Text 
-										id="clientvalue"										text="{Mandt}"										maxLines="0">
+									<Text id="clientvalue" text="{Mandt}" maxLines="0">
 									</Text>
-									<Label 
-										id="label3" 
-										text="SID">
+									<Label id="label3" text="SID">
 									</Label>
-									<Text 
-										id="sidvalue"										text="{Sysid}"										maxLines="0">
+									<Text id="sidvalue" text="{Sysid}" maxLines="0">
 									</Text>
-									<core:ExtensionPoint 
-										name="extIconTabFilterForm1"/>
+									<core:ExtensionPoint name="extIconTabFilterForm1"/>
 								</f:content>
 							</f:SimpleForm>
                         </content>
@@ -131,27 +84,18 @@
                         </content>
                     </IconTabFilter>
                     -->
-    				<core:ExtensionPoint
-    				    name="extIconTabFilter"/>
+    				<core:ExtensionPoint name="extIconTabFilter"/>
                 </items>
             </IconTabBar>
          
-    		<core:ExtensionPoint 
-    		    name="extDetail"/>
+    		<core:ExtensionPoint name="extDetail"/>
         </content>
-        <footer
-            id="detailFooter">
+        <footer id="detailFooter">
             <Toolbar id="detailToolbar">
                 <content>
-                    <ToolbarSpacer
-                        id="toolbarSpacer">
+                    <ToolbarSpacer id="toolbarSpacer">
                     </ToolbarSpacer>
-                    <Button type="Emphasized" text="Launch SAP GUI" press="onPressSAPGUI" />
-                    <Button 
-                        id="actionButton" 
-                        press="openActionSheet" 
-                        icon="sap-icon://action">
-                    </Button>
+                    <Button type="Emphasized" text="Launch SAP GUI" press="onPressSAPGUI" icon="sap-icon://action" iconFirst="false"/>
                 </content>
             </Toolbar>
         </footer>
