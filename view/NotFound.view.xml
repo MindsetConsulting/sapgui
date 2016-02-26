@@ -1,0 +1,26 @@
+<mvc:View 
+    controllerName="com.mindsetconsulting.sapgui1.view.NotFound"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" >
+    <Page 
+        id="notFoundPage" 
+        title="{i18n>notFoundTitle}" 
+        enableScrolling="false">
+        <content>
+            <Text 
+                id="notFoundText" 
+                class="spacerTop" 
+                text="{i18n>notFoundText}" 
+                textAlign="Center" 
+                width="100%" 
+                maxLines="0">
+            </Text>
+        </content>
+        <footer
+            id="notFoundFooter">
+            <Toolbar 
+                id="notFoundToolbar">
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

@@ -1,0 +1,36 @@
+{
+    "application": {
+        "id": "",
+        "title": "SAP GUI Favorites",
+        "description": "Launch your t-codes",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#tcode-launch",
+        "navigationComponentName": "com.mindsetconsulting.sapgui1",
+        "intentSemanticObject": "tcode",
+        "intentAction": "launch",
+        "html5ApplicationName": "sapguifavorites",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [],
+        "contentPackages": [
+            "8cfef40d-5776-4af4-bf1d-936abf244857-1442421774251"
+        ],
+        "categories": [
+            "2f8f8319-53ea-4fdd-8f28-f45c50c58728-1442421751078"
+        ]
+    },
+    "tile": {
+        "type": "DynamicTile",
+        "title": "SAP GUI Favorites",
+        "subtitle": "Launch SAP GUI",
+        "searchKeywords": "SAP GUI Favorites,Launch SAP GUI",
+        "displayIconUrl": "sap-icon://action",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "/sap/fiori/sapguifavorites/sap/opu/odata/sap/ZFAVORITES_SRV/UserFavoriteSet/$count",
+        "refreshInterval": 10,
+        "displayNumberUnit": "T-Codes"
+    }
+}

@@ -1,0 +1,74 @@
+<mvc:View 
+    controllerName="com.mindsetconsulting.sapgui1.view.Master"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:footerbar="sap.ushell.ui.footerbar">
+    <Page 
+        id="masterPage" 
+        title="{i18n>masterTitle}">
+        <subHeader
+            id="masterSubHeader">
+            <Bar 
+                id="searchBar">
+                <contentMiddle>
+                    <SearchField 
+                        id="searchField" 
+                        search="onSearch" 
+                        width="100%" 
+                        placeholder="{i18n>masterSearchPlaceholder}" 
+                        showRefreshButton="{device>/isNoTouch}" 
+                        tooltip="{i18n>masterSearchTooltip}">
+                    </SearchField>
+                </contentMiddle>
+            </Bar>
+        </subHeader>
+        <content>
+            <List 
+                id="list" 
+                select="onSelect" 
+                mode="{device>/listMode}" 
+                noDataText="{i18n>masterListNoDataText}" 
+                growing="true" 
+                growingScrollToLoad="true"				items="{/UserFavoriteSet}"> 
+                <items
+                    id="masterList">
+                    <ObjectListItem 
+                        id="mainListItem" 
+                        press="onSelect" 
+                        type="{device>/listItemType}" 
+                        counter="0"						title="{Report}"						number=""						numberUnit=""                        markFavorite="false" 
+                        markFlagged="false" 
+                        showMarkers="false">
+                        <core:ExtensionPoint 
+                            name="extListItemInfo"/>
+                            
+                            <firstStatus>
+			          <ObjectStatus
+			            text="{Sysid}"
+			             />
+			        </firstStatus>
+			       <attributes>
+          <ObjectAttribute text="{Text}" />
+         
+        </attributes>
+  
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <footer
+            id="masterFooter">
+            <Toolbar 
+                id="masterToolbar">
+                <content>
+                    <footerbar:SettingsButton 
+                        id="settingsButton" 
+                        icon="sap-icon://action-settings" 
+                        tooltip="Help">
+                    </footerbar:SettingsButton>
+                </content>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
