@@ -1,0 +1,11 @@
+{
+  "hcpdeploy": {
+    "account": "b2b9d6cc8",
+    "name": "sapgui",
+    "lastVersionWeTriedToDeploy": "1.0.3"
+  },
+  "deploy": {
+    "destination": "gateway1",
+    "name": "ZSAPGUI"
+  }
+}

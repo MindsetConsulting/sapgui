@@ -17,6 +17,23 @@
         "runnerId": "webapprunner",
         "displayName": "Configuration"
       }
+    },
+    {
+      "filePath": "/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 4459183,
+        "displayName": "Run Component.js"
+      }
     }
   ]
 }

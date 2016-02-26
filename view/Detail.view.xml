@@ -2,10 +2,6 @@
     <Page id="detailPage" navButtonPress="onNavBack" title="{i18n&gt;detailTitle}" showNavButton="{device&gt;/isPhone}">
         <content>
             <ObjectHeader id="detailHeader" title="{Text}" number="{Report}" numberUnit="" introActive="false" titleActive="false" iconActive="false">
-                <attributes id="detailAttributes">                
-                    <ObjectAttribute id="attribute" text="{i18n&gt;detailText}" active="false">
-                    </ObjectAttribute>
-                </attributes>
                 <firstStatus id="detailStatus">
                     <ObjectStatus id="status" text="">
                     </ObjectStatus>
@@ -93,6 +89,7 @@
         <footer id="detailFooter">
             <Toolbar id="detailToolbar">
                 <content>
+                    <Button text="More from Mindset" width="" id="__button1" type="Accept" icon="sap-icon://grid" press="onClickMindset"/>
                     <ToolbarSpacer id="toolbarSpacer">
                     </ToolbarSpacer>
                     <Button type="Emphasized" text="Launch SAP GUI" press="onPressSAPGUI" icon="sap-icon://action" iconFirst="false"/>

@@ -5,7 +5,8 @@ sap.ui.core.UIComponent.extend("com.mindsetconsulting.sapgui1.Component", {
 	metadata: {
 		name: "sapgui1",
 		version: "1.0",
-		includes: [],
+		includes: ["3rdparty/jquery.cookie.js",
+				   "3rdparty/FileSaver.js"],
 		dependencies: {
 			libs: ["sap.m", "sap.ui.layout"],
 			components: []

@@ -37,7 +37,7 @@
                         id="mainListItem" 
                         press="onSelect" 
                         type="{device>/listItemType}" 
-                        counter="0"						title="{Report}"						number=""						numberUnit=""                        markFavorite="false" 
+                        counter="0"						title="{Text}"						number=""						numberUnit=""                        markFavorite="false" 
                         markFlagged="false" 
                         showMarkers="false">
                         <core:ExtensionPoint 
@@ -49,7 +49,7 @@
 			             />
 			        </firstStatus>
 			       <attributes>
-          <ObjectAttribute text="{Text}" />
+          <ObjectAttribute text="{Report}" />
          
         </attributes>
   
@@ -62,11 +62,13 @@
             <Toolbar 
                 id="masterToolbar">
                 <content>
+                <!-- no footer needed for poc
                     <footerbar:SettingsButton 
                         id="settingsButton" 
                         icon="sap-icon://action-settings" 
                         tooltip="Help">
                     </footerbar:SettingsButton>
+                -->
                 </content>
             </Toolbar>
         </footer>
